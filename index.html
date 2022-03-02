@@ -32,12 +32,8 @@
   <body>
     <a-scene timeout="3000">
 
-      <a-entity environment="skyType: gradient; skyColor: #1d7444; skyColor: skyblue; 
-        preset: forest; ground: spikes; groundColor: #ca8d42; groundColor2: #ca8d42; 
-        groundTexture: square; flatShading	: true; dressingAmount: 500;
-        dressingColor: green; dressing: trees; shadow: true; lightPosition: -5 5 4" 
-        hide-in-ar-mode
-        >
+      <a-entity environment="preset: forest; lighting: none; shadow: none; lightPosition: 0 2.15 0"
+           hide-in-ar-mode></a-entity>
       </a-entity>
        <a-assets>
             <a-asset-item id="letter" src="" response-type="arraybuffer"></a-asset-item>
@@ -50,7 +46,7 @@
           >
         </a-entity>
 
-        <a-entity id="alphabet" light="type: ambient; intensity: 0.2;"></a-entity>
+        <a-entity id="alphabet" light="type: ambient; intensity: 0.5;"></a-entity>
         <a-light type="directional"
                light="castShadow: true;
                       shadowMapHeight: 1024;
